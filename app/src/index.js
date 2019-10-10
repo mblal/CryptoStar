@@ -44,8 +44,8 @@ const App = {
     const { lookUptokenIdToStarInfo } = this.meta.methods;
     console.log
     const tokenId = document.getElementById("lookid").value;
-    const r = await lookUptokenIdToStarInfo(tokenId).call();
-    App.setStatus("The star retrieved is " + r + ".");
+    const result = await lookUptokenIdToStarInfo(tokenId).call();
+    App.setStatus("The retrieved star  is " + result + ".");
 
   }
 
